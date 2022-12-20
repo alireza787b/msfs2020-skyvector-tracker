@@ -1,3 +1,13 @@
+#Added Feature
+This is just a forked version of the original release by MoMadenU MSFS2020-skyvector
+All it does now is it adds track history overlay on skyvector so you can anlayze and monitor your flight trajectory history...
+Hopefully This will be updated with more control feature later on...
+Youtube Video Will be uploaded shortly...
+
+
+
+
+
 # msfs2020-skyvector
 
 A moving map that connects MSFS 2020 to SkyVector. A preview of it working can be found [Here](https://youtu.be/mP5gA6EbgHw)
