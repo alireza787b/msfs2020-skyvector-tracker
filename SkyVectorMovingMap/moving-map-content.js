@@ -44,7 +44,8 @@ chrome.storage.sync.get({ portNumber: "8001" },
     var portNumberDiv = document.getElementById("portDivID")
     //console.log("portNumberDiv "+portNumberDiv);
     var portNumber = portNumberDiv.innerText;
-
+var updateInterval = 5;
+var correctionInterval = 3;
     function getHeading(lat1, lon1, lat2, lon2) 
     {
         var lat1 = lat1 * Math.PI / 180;
@@ -76,7 +77,7 @@ chrome.storage.sync.get({ portNumber: "8001" },
                     var jsonResult = JSON.parse(this.responseText);
                     setMapIcon(jsonResult.coordinates);
                     total = total +1;
-                    if (total%5 == 1){
+                    if (total%updateInterval == 1){
                     setMapTrack();
                     }
                 } 
@@ -194,7 +195,8 @@ chrome.storage.sync.get({ portNumber: "8001" },
             correctPoints();
             tileSize = SkyVector.data.tilesize;
         }
-        if (counter%5 == 1){
+        console.log(counter);
+        if (counter%correctionInterval == 1){
       correctPoints();
         }
 
@@ -204,7 +206,7 @@ chrome.storage.sync.get({ portNumber: "8001" },
 
     setInterval(function() 
     { 
-        getLocation()}, 2000);
+        getLocation()}, 1000);
         `;
 
         document.body.appendChild(mmScript);
