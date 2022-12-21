@@ -6,7 +6,8 @@ Hopefully This will be updated with more control feature later on...
 
 Youtube Video Tutorial and Demo:
 
-https://www.youtube.com/watch?v=kvG1TY599ZU
+
+<a href="https://www.youtube.com/watch?v=kvG1TY599ZU" target="_blank" >![msfsskyvector](https://user-images.githubusercontent.com/30341941/208807497-0ee00cb9-2635-4b1a-a19b-3393bfbc6fb6.jpeg) </a>
 
 
 Original Project:
